@@ -15,7 +15,7 @@ namespace TelegramBot
 {
     class Program
     {
-        private static readonly TelegramBotClient posBot = new TelegramBotClient("1125804301:AAGlbquGeISo_zZara0DvMVy5P5v5pllW2k");
+        private static readonly TelegramBotClient posBot = new TelegramBotClient("1125804301:AAEmJ1zaFOz9lq7SltvAl35h1jI2WLs44Uo");
         static void Main(string[] args)
         {
             posBot.OnMessage += BotOnMessageReceived;
@@ -38,7 +38,7 @@ namespace TelegramBot
                 return;
             if (message.Type == Telegram.Bot.Types.Enums.MessageType.Text)
             {
-                if (message.Text.Length >= 2&& message.Text.Length<=3)
+                if (message.Text.Length >= 2 && message.Text.Length <= 3)
                 {
                     RespCodes respcodes = new RespCodes();
                     string request = respcodes.GetRespCode(message.Text);
@@ -47,28 +47,23 @@ namespace TelegramBot
 
 
                 switch (message.Text)
-                { 
+                {
                     case "/choosePOS":
                         string text_choose = "ընտրեք";
                         await posBot.SendTextMessageAsync(message.From.Id, text_choose);
-                        string text_start = @"1./POS"+"\t"+"\t"+"2./HDM(POS)";
+                        string text_start = @"1./POS" + "\t" + "\t" + "2./HDM(POS)";
                         await posBot.SendTextMessageAsync(message.From.Id, text_start);
                         break;
 
                     case "/HDM":
                         string text_choose1 = "ընտրեք";
                         await posBot.SendTextMessageAsync(message.From.Id, text_choose1);
-                        string text_HDM = @"1./PartnerTech" + "\t"+"2./PAX900";
+                        string text_HDM = @"1./PartnerTech" + "\t" + "2./PAX900";
                         await posBot.SendTextMessageAsync(message.From.Id, text_HDM);
                         break;
 
                     case "/PartnerTech":
-                        InlineQueryResultCachedPhoto PartnerTech = new InlineQueryResultCachedPhoto("1", "https://photos.app.goo.gl/gCnNvuDm5upnmTgv6");
-
-
-
-
-                        FileStream file_Partner = new FileStream(@"/Users/hasmik/Downloads/telegramBotData/PartnerTech.jpeg", FileMode.Open);
+                        string file_Partner = @"https://photos.app.goo.gl/ptd6JjGbCGx9scQS7";
                         await posBot.SendPhotoAsync(message.From.Id, file_Partner);
 
                         var inlineKeybord_transaction = new InlineKeyboardMarkup(new[]
@@ -86,7 +81,7 @@ namespace TelegramBot
                             }
                         });
                         await posBot.SendTextMessageAsync(message.From.Id, "ընտրեք գործարքը", replyMarkup: inlineKeybord_transaction);
-                     
+
                         var inlineKeybord_settings = new InlineKeyboardMarkup(new[]
                         {
                             new[]
@@ -104,9 +99,9 @@ namespace TelegramBot
                         });
                         await posBot.SendTextMessageAsync(message.From.Id, "ընտրեք կարգավորումը", replyMarkup: inlineKeybord_settings);
                         break;
-              
+
                     case "/PAX900":
-                        FileStream file_PAX900 = new FileStream(@"/Users/hasmik/Downloads/telegramBotData/PAX900.jpeg", FileMode.Open);
+                        string file_PAX900 = @"https://photos.app.goo.gl/Dd4ZpjjAhRUuT3Hr6";
                         await posBot.SendPhotoAsync(message.From.Id, file_PAX900);
                         var inlineKeybord_PAX900 = new InlineKeyboardMarkup(new[]
                         {
@@ -144,19 +139,19 @@ namespace TelegramBot
                     case "/POS":
                         string text_choose3 = "ընտրեք";
                         await posBot.SendTextMessageAsync(message.From.Id, text_choose3);
-                        string text_POS = @"1./Verifone"+"\t"+"2./Ingenico";
+                        string text_POS = @"1./Verifone" + "\t" + "2./Ingenico";
                         await posBot.SendTextMessageAsync(message.From.Id, text_POS);
                         break;
 
                     case "/Verifone":
                         string text_choose4 = "ընտրեք";
                         await posBot.SendTextMessageAsync(message.From.Id, text_choose4);
-                        string text_Verifone = @"1./vx520 "+"\t"+" 2./vx680";
+                        string text_Verifone = @"1./vx520 " + "\t" + " 2./vx680";
                         await posBot.SendTextMessageAsync(message.From.Id, text_Verifone);
                         break;
 
                     case "/vx520":
-                        FileStream file_vx520 = new FileStream(@"/Users/hasmik/Downloads/telegramBotData/vx520.jpeg", FileMode.Open);
+                        string file_vx520 = @"https://photos.app.goo.gl/BHb1Kqcrfu3wcrKn6";
                         await posBot.SendPhotoAsync(message.From.Id, file_vx520);
                         var inlineKeybord_vx520 = new InlineKeyboardMarkup(new[]
                         {
@@ -200,7 +195,7 @@ namespace TelegramBot
                         break;
 
                     case "/vx680":
-                        FileStream file_vx680 = new FileStream(@"/Users/hasmik/Downloads/telegramBotData/vx680.jpeg", FileMode.Open);
+                        string file_vx680 = @"https://photos.app.goo.gl/URvLRtWGqAD2V4DRA";
                         await posBot.SendPhotoAsync(message.From.Id, file_vx680);
                         var inlineKeybord_vx680 = new InlineKeyboardMarkup(new[]
                         {
@@ -244,7 +239,7 @@ namespace TelegramBot
                         break;
 
                     case "/Ingenico":
-                        FileStream file_Ingenico = new FileStream(@"/Users/hasmik/Downloads/telegramBotData/Ingenico.jpeg", FileMode.Open);
+                        string file_Ingenico = @"https://photos.app.goo.gl/xsZkAZfp2VmwtfqRA";
                         await posBot.SendPhotoAsync(message.From.Id, file_Ingenico);
                         var inlineKeybord_Ingenico = new InlineKeyboardMarkup(new[]
                         {
@@ -312,23 +307,22 @@ namespace TelegramBot
                         break;
 
                     case "/RespCode":
-                        FileStream file_RespCode = new FileStream(@"/Users/hasmik/Downloads/telegramBotData/RespCode.png", FileMode.Open);
+                        string file_RespCode = @"https://photos.app.goo.gl/pA9LAuwBp7SCp7dD7";
                         await posBot.SendPhotoAsync(message.From.Id, file_RespCode);
                         break;
 
                     case "/PaymentSystem":
-
-                        FileStream file_PaymentSystem5 = new FileStream(@"/Users/hasmik/Downloads/telegramBotData/pay.png", FileMode.Open);
+                        string file_PaymentSystem5 = @"https://photos.app.goo.gl/EqnAyq7dceNC7Va68";
                         await posBot.SendPhotoAsync(message.From.Id, file_PaymentSystem5);
                         break;
 
                     case "/CardInfo":
-                        FileStream file_CardInfo = new FileStream(@"/Users/hasmik/Downloads/telegramBotData/CardInfo.png", FileMode.Open);
+                        string file_CardInfo = @"https://photos.app.goo.gl/THHKS3k2ZYuiFeCCA";
                         await posBot.SendPhotoAsync(message.From.Id, file_CardInfo);
                         break;
 
                     case "/CheckInfo":
-                        FileStream file_ReceiptInfo = new FileStream(@"/Users/hasmik/Downloads/telegramBotData/CheckInfo.png", FileMode.Open);
+                        string file_ReceiptInfo = @"https://photos.app.goo.gl/FMNJRyFVkHALFWJH8";
                         await posBot.SendPhotoAsync(message.From.Id, file_ReceiptInfo);
                         break;
                     default:

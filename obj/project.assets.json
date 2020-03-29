@@ -4643,11 +4643,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/hasmik/Projects/TelegramBot/TelegramBot/TelegramBot.csproj",
+      "projectUniqueName": "/Users/hasmik/Desktop/RepositoryTelegrdamBot/TelegramBot.csproj",
       "projectName": "TelegramBot",
-      "projectPath": "/Users/hasmik/Projects/TelegramBot/TelegramBot/TelegramBot.csproj",
+      "projectPath": "/Users/hasmik/Desktop/RepositoryTelegrdamBot/TelegramBot.csproj",
       "packagesPath": "/Users/hasmik/.nuget/packages/",
-      "outputPath": "/Users/hasmik/Projects/TelegramBot/TelegramBot/obj/",
+      "outputPath": "/Users/hasmik/Desktop/RepositoryTelegrdamBot/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
