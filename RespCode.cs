@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TelegramBot
+namespace ServiceTelegramBot
 {
     public class RespCodes
     {
@@ -26,7 +26,7 @@ namespace TelegramBot
             respCodeDictionary.Add("119", "Գործարքը թույլատրված չէ" + "\n" + "Транзакция не законна" + "\n" + "Security violation");
             respCodeDictionary.Add("120", "Գործարքը թույլատրված չէ" + "\n" + "Не разрешено" + "\n" + "Not allowed");
             respCodeDictionary.Add("121", "Գումարը գերազանցում է սպասարկողի կողմից սահմանված չափը" + "\n" + "Запрашиваемая сумма выходит за пределы диапазона, разрешенного эмитентом" + "\n" + "Excds wdrwl limt");
-            respCodeDictionary.Add("123",  "Գերազանցված է գործարքների թույլատրելի քանակը" + "\n" + "Превышено циклический лимит POS-терминалам" + "\n" + "Excds wdrwl ltmt" );
+            respCodeDictionary.Add("123", "Գերազանցված է գործարքների թույլատրելի քանակը" + "\n" + "Превышено циклический лимит POS-терминалам" + "\n" + "Excds wdrwl ltmt");
             respCodeDictionary.Add("125", "Անվավեր քարտ" + "\n" + "Недействительная карта" + "\n" + "Invalid card");
             respCodeDictionary.Add("200", "Անվավեր քարտ" + "\n" + "Недействительная карта" + "\n" + "Invalid card");
             respCodeDictionary.Add("202", "Անվավեր քարտ" + "\n" + "Недействительная карта" + "\n" + "Invalid card");
@@ -50,7 +50,7 @@ namespace TelegramBot
         }
         public string GetRespCode(string codde)
         {
-            string text_resp_cod="Սխալ մուտքագրված կոդ";
+            string text_resp_cod = "Սխալ մուտքագրված կոդ";
             foreach (KeyValuePair<string, string> keyValue in respCodeDictionary)
             {
                 if (keyValue.Key == codde.ToUpper())
@@ -63,5 +63,5 @@ namespace TelegramBot
         }
     }
 }
-    
+
 
