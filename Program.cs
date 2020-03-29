@@ -1,35 +1,43 @@
-﻿using System;
-using Microsoft.VisualBasic.CompilerServices;
+using System;
+using System.IO;
 using Telegram.Bot;
 using Telegram.Bot.Args;
-using Telegram.Bot.Types;
-using Telegram.Bot.Types.Enums;
-using Telegram.Bot.Types.InputFiles;
-using Telegram.Bot.Types.ReplyMarkups;
-using System.Text;
-using System.IO;
-using System.Collections.Generic;
 using Telegram.Bot.Types.InlineQueryResults;
+using Telegram.Bot.Types.ReplyMarkups;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
-namespace TelegramBot
+namespace ServiceTelegramBot
 {
-    class Program
+    public class Program
     {
         private static readonly TelegramBotClient posBot = new TelegramBotClient("1125804301:AAEmJ1zaFOz9lq7SltvAl35h1jI2WLs44Uo");
-        static void Main(string[] args)
+
+        public static void Main(string[] args)
         {
             posBot.OnMessage += BotOnMessageReceived;
-            //posBot.OnCallbackQuery += BotOnCallbackQueryReceived;
             var me = posBot.GetMeAsync().Result;
             Console.Title = me.Username;
             posBot.StartReceiving();
             Console.ReadLine();
             posBot.StopReceiving();
+
+
+            //MainFromClientsMessages();
+            CreateHostBuilder(args).Build().Run();
+
+
         }
 
-        //private static void BotOnCallbackQueryReceived(object sender, CallbackQueryEventArgs e)
-        //{
-        //}
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureServices((hostContext, services) =>
+                {
+                    services.AddHostedService<Worker>();
+                });
+
+
+
 
         private static async void BotOnMessageReceived(object sender, MessageEventArgs e)
         {
@@ -330,5 +338,9 @@ namespace TelegramBot
                 }
             }
         }
+
+
+
+
     }
 }
