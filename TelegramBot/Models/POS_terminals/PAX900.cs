@@ -1,17 +1,14 @@
-﻿using System;
-using Telegram.Bot.Types.ReplyMarkups;
+﻿using Telegram.Bot.Types.ReplyMarkups;
 
 namespace TelegramBot
 {
     public class PAX900
     {
-        public string photo = @"https://photos.app.goo.gl/Dd4ZpjjAhRUuT3Hr6";
-
-        public PAX900()
-        {
-        }
+        private string photo = @"https://photos.app.goo.gl/Dd4ZpjjAhRUuT3Hr6";
+        public string Photo { get => photo; set => photo = value; }
+        public PAX900(){ }
         public InlineKeyboardMarkup inlineKeybord = new InlineKeyboardMarkup(new[]
-{
+        {
             new[]
             {
                 InlineKeyboardButton.WithUrl("վաճառք-Purchase","https://www.youtube.com/watch?v=Ky7qfsU8Oak&list=PL4bL2ez_ahhCazgiaj7MF7kntFNKqPhyE"),

@@ -1,16 +1,12 @@
-﻿using System;
-using Telegram.Bot.Types.ReplyMarkups;
+﻿using Telegram.Bot.Types.ReplyMarkups;
 
 namespace TelegramBot
 {
     public class Vx680
     {
-        public string photo = @"https://photos.app.goo.gl/URvLRtWGqAD2V4DRA";
-
-        public Vx680()
-        {
-        }
-
+        private string photo = @"https://photos.app.goo.gl/URvLRtWGqAD2V4DRA";
+        public string Photo { get => photo; set => photo = value; }
+        public Vx680() { }
         public InlineKeyboardMarkup inlineKeybord = new InlineKeyboardMarkup(new[]
         {
             new[]
@@ -37,9 +33,5 @@ namespace TelegramBot
                 InlineKeyboardButton.WithUrl("փաթեթի ուղարկում-Settlement","https://www.youtube.com/watch?v=mDm7U16cxNA&t=291s")
             }
         });
-
-
-
-
     }
 }
