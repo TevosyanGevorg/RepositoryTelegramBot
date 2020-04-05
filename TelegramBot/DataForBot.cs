@@ -1,4 +1,5 @@
-﻿using TelegramBot.Models;
+﻿using Telegram.Bot.Types.ReplyMarkups;
+using TelegramBot.Models;
 
 namespace TelegramBot
 {
@@ -15,6 +16,8 @@ namespace TelegramBot
         private PartnerTech terrminal_PartnerTech;
         private RespCodes responseCodes;
         private Contacts contacts;
+        private ReplyKeyboardMarkup generalMenu;
+        private ReplyKeyboardMarkup secondMenu;
 
         public string Link_respCode { get => link_respCode; set => link_respCode = value; }
         public string Link_paymentSystem { get => link_paymentSystem; set => link_paymentSystem = value; }
@@ -27,7 +30,8 @@ namespace TelegramBot
         public PartnerTech Terrminal_PartnerTech { get => terrminal_PartnerTech; set => terrminal_PartnerTech = value; }
         public RespCodes ResponseCodes { get => responseCodes; set => responseCodes = value; }
         public Contacts Contacts { get => contacts; set => contacts = value; }
-
+        public ReplyKeyboardMarkup GeneralMenu { get => generalMenu; set => generalMenu = value; }
+        public ReplyKeyboardMarkup SecondMenu { get => secondMenu; set => secondMenu = value; }
         public DataForBot()
         {
             Link_respCode = @"https://lh3.googleusercontent.com/VqiIxmxtZWnM-eZKo9-fQmAvqknhbnWQivxKH0enQZxhFFB0IGY32dmMPG73puk9Z0tjiQM399cHYujH3BmDv2V09VvY_o_RQYb0QBJVWcLmFt-hOYovCOEf3tCjju2rlywGP85ORtvggI4ODHZ6MVkHiwmAUnR-Co8z-zjr5rwRG1RFoYQo9HI1TJrtlDdm_R1dPJD3XM5E5A4Zt_H8H_ICbRBZRDeywKQXhV10XVt9qYoLzEFWzjh69767UxrJWHzeXlsXLc6-ysiVwjutYP8NmdD1syGpifxmFKsb9arJjvhM1R513hLom84YtIxWIBO67VgOVwr1A6cUCJoIPST3_jSNZYnFR91nZ5K4a8zWlyhFsaUGwIS7KpwqEqthcalvn8bu7MxRRjY7p6J-VYdm1F-GFHAFpFeLZZP48ZOOSk0c_PnE-nfmlncI67HS7OAjD1-MOEy65bWmr9ByslZPwX2MEd98HKfMrNL8UllrR1k7r3OSTmylBil55FKwXSqa-4JaMdavOCbF9NBafRPoqHsNYSSyNVuwyz-HygiK6EkaCI3VTCuQqZm4S8-ni_8R7OAAg9Mvso0bIDA_RlsgBUKkmtTMF1QIfhOpNQNNJerWvpeFv4qHKnTMVIlwP-y2l1CVJZUZL0FWa7VBNghRO3oMFnfeQ9lBtJPjwfkyNWtmh9YGlMGgCbEdOUabds4tpUYinvse1_KHrm7CB5RpT04h60O0uVHXaMw9zu7Ob0kPpZ81Gg=w1000-h1414-no";
@@ -41,6 +45,22 @@ namespace TelegramBot
             Terrminal_PartnerTech = new PartnerTech();
             ResponseCodes = new RespCodes();
             Contacts = new Contacts();
+            GeneralMenu = new ReplyKeyboardMarkup(new[]
+            {
+                new[]{new KeyboardButton("Ընտրել սարքը") },
+                new[]{new KeyboardButton("Հեռախոսահամարներ") },
+                new[]{new KeyboardButton("Մերժման կոդերի աղյուսակ") },
+                new[]{new KeyboardButton("Գանձապահի ուսուցում") }
+            });
+            SecondMenu = new ReplyKeyboardMarkup(new[]
+            {
+                new[]{new KeyboardButton("Verifone vx520") },
+                new[]{new KeyboardButton("Verifone vx680") },
+                new[]{new KeyboardButton("ՀԴՄ PAX900") },
+                new[]{new KeyboardButton("ՀԴՄ PartnerTech") },
+                new[]{new KeyboardButton("Ingenico iWL250") },
+                new[]{new KeyboardButton("Գլխավոր մենյու") }
+            });
         }
     }
 }

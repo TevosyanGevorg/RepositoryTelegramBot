@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{64689D49-EF1A-4EEB-BE31-A10864A64BF0}|Default">
   <MonoDevelop.Ide.ItemProperties.TelegramBot PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DataForBot.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="103" Column="81" />
+      <File FileName="Program.cs" Line="13" Column="55" />
       <File FileName="RespCode.cs" Line="2" Column="1" />
-      <File FileName="DataForBot.cs" Line="27" Column="33" />
+      <File FileName="DataForBot.cs" Line="32" Column="10" />
       <File FileName="Models/Contacts.cs" Line="7" Column="9" />
     </Files>
     <Pads>
@@ -13,7 +13,7 @@
           <Node name="TelegramBot" expanded="True">
             <Node name="TelegramBot" expanded="True">
               <Node name="Models" expanded="True" />
-              <Node name="DataForBot.cs" selected="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>

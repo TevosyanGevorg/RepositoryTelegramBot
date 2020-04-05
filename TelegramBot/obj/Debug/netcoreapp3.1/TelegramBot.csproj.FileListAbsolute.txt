@@ -13,3 +13,4 @@
 /Users/hasmik/Projects/TelegramBot/TelegramBot/obj/Debug/netcoreapp3.1/TelegramBot.pdb
 /Users/hasmik/Projects/TelegramBot/TelegramBot/obj/Debug/netcoreapp3.1/TelegramBot.genruntimeconfig.cache
 /Users/hasmik/Projects/TelegramBot/TelegramBot/obj/Debug/netcoreapp3.1/TelegramBot.csprojAssemblyReference.cache
+/Users/hasmik/Projects/TelegramBot/TelegramBot/bin/Debug/netcoreapp3.1/Docker.DotNet.dll
