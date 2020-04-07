@@ -1,7 +1,6 @@
 ﻿using System;
 using Telegram.Bot;
 using Telegram.Bot.Args;
-using Telegram.Bot.Types.ReplyMarkups;
 
 namespace TelegramBot
 {
