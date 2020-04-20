@@ -1,15 +1,16 @@
 ﻿<Properties StartupConfiguration="{717392CA-9BDF-495A-BB8E-6F2812F4B5DA}|Default">
   <MonoDevelop.Ide.ItemProperties.TelegramBot PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TelegramBot/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TelegramBot/DataForBot.cs">
     <Files>
       <File FileName="TelegramBot/Program.cs" Line="1" Column="1" />
+      <File FileName="TelegramBot/DataForBot.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TelegramBot" expanded="True">
             <Node name="TelegramBot" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="DataForBot.cs" selected="True" />
             </Node>
           </Node>
         </State>

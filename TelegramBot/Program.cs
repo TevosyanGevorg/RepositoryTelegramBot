@@ -34,7 +34,7 @@ namespace TelegramBot
                     case "/Գլխավոր մենյու":
                         await posBot.SendTextMessageAsync(message.Chat.Id, "ընտրեք", replyMarkup: dataForBot.GeneralMenu);
                         break;
-                    case "/Ընտրել սարքը":
+                    case "/Սարքեր":
                         await posBot.SendTextMessageAsync(message.From.Id, "ընտրեք", replyMarkup: dataForBot.SecondMenu);
                         break;
                     case "/ՀԴՄ PartnerTech":
@@ -45,13 +45,10 @@ namespace TelegramBot
                         await posBot.SendPhotoAsync(message.From.Id, dataForBot.Terminal_PAX900.Photo);
                         await posBot.SendTextMessageAsync(message.From.Id, "ընտրեք կարգավորումը", replyMarkup: dataForBot.Terminal_PAX900.inlineKeybord);
                         break;
-                    case "/Verifone vx520":
+                    case "/Verifone vx520 և vx680":
+                        await posBot.SendPhotoAsync(message.From.Id, dataForBot.Terminal_Vx680.Photo);
                         await posBot.SendPhotoAsync(message.From.Id, dataForBot.Terminal_vx520.Photo);
                         await posBot.SendTextMessageAsync(message.From.Id, "ընտրեք կարգավորումը", replyMarkup: dataForBot.Terminal_vx520.inlineKeybord);
-                        break;
-                    case "/Verifone vx680":
-                        await posBot.SendPhotoAsync(message.From.Id, dataForBot.Terminal_Vx680.Photo);
-                        await posBot.SendTextMessageAsync(message.From.Id, "ընտրեք գործարքը", replyMarkup: dataForBot.Terminal_Vx680.inlineKeybord);
                         break;
                     case "/Ingenico iWL250":
                         await posBot.SendPhotoAsync(message.From.Id, dataForBot.Terminal_Iwl250.Photo);

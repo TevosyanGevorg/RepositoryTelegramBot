@@ -47,15 +47,14 @@ namespace TelegramBot
             Contacts = new Contacts();
             GeneralMenu = new ReplyKeyboardMarkup(new[]
             {
-                new[]{new KeyboardButton("Ընտրել սարքը") },
+                new[]{new KeyboardButton("Սարքեր") },
                 new[]{new KeyboardButton("Հեռախոսահամարներ") },
                 new[]{new KeyboardButton("Մերժման կոդերի աղյուսակ") },
                 new[]{new KeyboardButton("Գանձապահի ուսուցում") }
             });
             SecondMenu = new ReplyKeyboardMarkup(new[]
             {
-                new[]{new KeyboardButton("Verifone vx520") },
-                new[]{new KeyboardButton("Verifone vx680") },
+                new[]{new KeyboardButton("Verifone vx520 և vx680") },
                 new[]{new KeyboardButton("ՀԴՄ PAX900") },
                 new[]{new KeyboardButton("ՀԴՄ PartnerTech") },
                 new[]{new KeyboardButton("Ingenico iWL250") },
