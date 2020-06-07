@@ -29,13 +29,13 @@ namespace TelegramBot
                 switch (message1)
                 {
                     case "//start":
-                        await posBot.SendTextMessageAsync(message.From.Id, "ընտրեք", replyMarkup: dataForBot.GeneralMenu);
+                        await posBot.SendTextMessageAsync(message.From.Id, "ընտրեք", replyMarkup: dataForBot.Menu_General);
                         break;
                     case "/Գլխավոր մենյու":
-                        await posBot.SendTextMessageAsync(message.Chat.Id, "ընտրեք", replyMarkup: dataForBot.GeneralMenu);
+                        await posBot.SendTextMessageAsync(message.Chat.Id, "ընտրեք", replyMarkup: dataForBot.Menu_General);
                         break;
                     case "/Սարքեր":
-                        await posBot.SendTextMessageAsync(message.From.Id, "ընտրեք", replyMarkup: dataForBot.SecondMenu);
+                        await posBot.SendTextMessageAsync(message.From.Id, "ընտրեք", replyMarkup: dataForBot.Menu_Second);
                         break;
                     case "/ՀԴՄ PartnerTech":
                         await posBot.SendPhotoAsync(message.From.Id, dataForBot.Terrminal_PartnerTech.Photo);

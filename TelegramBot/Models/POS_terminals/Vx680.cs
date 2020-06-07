@@ -4,16 +4,22 @@ namespace TelegramBot
 {
     public class Vx680
     {
-        private string photo = @"https://lh3.googleusercontent.com/pw/ACtC-3dLLGFGwFniqMc0cuF2pNP-yYkec3PzCy4thMSxzB9bcXl65giVYmUsxy1lar27i5UynLN5WSofjNvyKaVuKoPkMYE42LOw5PtozobrRkSPUb0i6qODkKmeq52aPNppuwzRvdpB1lVmtIdfGr1U3w2R=s225-no?authuser=0";
-        public string Photo { get => photo; set => photo = value; }
+        private string link_photo = @"https://lh3.googleusercontent.com/pw/ACtC-3dLLGFGwFniqMc0cuF2pNP-yYkec3PzCy4thMSxzB9bcXl65giVYmUsxy1lar27i5UynLN5WSofjNvyKaVuKoPkMYE42LOw5PtozobrRkSPUb0i6qODkKmeq52aPNppuwzRvdpB1lVmtIdfGr1U3w2R=s225-no?authuser=0";
+        private static string link_Purchase = @"https://lh3.googleusercontent.com/6GG0ST4LS_YQnADooa9YKg4KMfxRRj8IES5CvKRodl_874ZWPduyWoZ_jeliVg5maiIWCMnN1X6dbiQqjFEt95vFmLpACXFzNTBLfNqaO-_TAnvYRO10J4m3-tFDhOO0vby2hu9qpkdU3j3GrFf4VkQwoPbzutA5GMHb224xgg3x8nJUDYb2qNvp83KAoe-vqoTwFuAg0iDssgL8tdR8ZgMzJ8bRhC4z-rNWxlhk--nnnl6QPNNanZPwqQRO6PxEYyl8fu71TByRqZFuZKBM6SVQxZiuSgJMc_IjbxokyUjzYYHOD0gop6Dd9_AfolJR5WChsajQ4rCAgD4F8DN_PQWrdeUwC9g3Pb3BFW0AC9QsRuL4E4ebz2Lzz9eVk_WWLKEHta2KcCMvjTgaMxPcJHBkebE3zXOAKuXNSRQMhGG3y2dWDoMB59pZNCSbI0cfg66fgf0xcjnVpo10nn_Bv2CEvd5h1bRjS56gohQz_4uEIrPuTskMLW03JtzCSpoIXypYBX3Ht4cs7NRo6QL92xFtrh8dm4vriCTRMVItCj-DNJ2Kq7GOYimBYoROLPkwsf7bYLzyEGI6N1Tx4KSnvv-BeXHJfhJiAgr74oUQwjE9OWqyv4TGU-KAXlTYuIKbRPBLdEW2_FACA_0y1sgWC7XvTSEn8prwCYwLcfRO7NGc0k6ldB6RK1V_wTSI=w1216-h684-no?authuser=1";
+        private static string link_Void = @"https://lh3.googleusercontent.com/gb0buk_zsbLR0GPeNAUcd_TCSQd6PKVCusWwRkm-cazb2hkO3Evggr269Ccmv5UQhdaY1yal4dD9Y_mhjR-Q0fMckiIAD9YI0rZbpde4ozTBwq8-qSKE8CpkMZr-YRiy-jXyLaRFGTWLJ5scGeDtGQWqX6V9In62XW04RFCgAWkqliPEO0cYXMnfuwVaN7I_WSRn6zCL7vsU2LFpQM9grVykZkq9nNRVGRMbnDO-orzZfneOcs3lCF2nhmiMI9EXnIUx_3rz9Z_SboVWhJjfjl0Z2o_SxbWcTMqfJkjL9WNIqmVqy4M2JsOJCF1yCvEzuYo_F4D-JeHLu3WZ4k6eGVqhlYJRYGXRN80y5Ezc9knntU5Pmt0stAVo5lxOjok_0FQ6ysfrM4xrXVo_RxMcw1XwPmkvSe0RIzwCumMoK7RgKvyDvZBOCyzo2KqmrCAjy5IhRGdMmE0fYr3E5f31di2vupENpD_iHW1xaQmbsVGxTHGw6JFd-qq3CIYsYnOT713Uv4ht8irVqaSjwINVoNj1zdIZixk5Qn2MalwyQyYN5BHGKfFUI8gPiFZiM-7L5TGObPkGBZ5IPcGDXWI968XO0NueA4Fpdeb14Y0n_j1CfGI2k_MDQKLXsElPoJiNl6pEnaL6MEQ6VWqYB3cKR2bmsxPATfeoWoow8i0c2kLi72i23nucHQQJs5lc=w1216-h684-no?authuser=1";
+        private static string link_Refund = @"https://lh3.googleusercontent.com/cHp8wwUwp1vXbkeHY5xLVpWQf2ckiSvc_4MGZ93ksl_tP7vTo3WaTilvF8wQjRsxhkk7LZ4fTNA8bVYaGDKyQS7zhkcoGdnCgQjdqquFE-OKx738bnG6TR1D26ZaIQPvd7NVjzMAcQvWgxBbWbvx_ntib2N2V-e3lBkyoVDS-WyQjFvbMSHNJoUk3cbDyj0o8BYh6_Y1CVRy1_huzVNVm6sw7MaMHrF4nBjxTtPVI8B0NR78jaugzfU0wQgaskNRUUqSNGGdjLa4hWVnp56eDjrU09oJ9lC1PTWg8W14OGfJo4ed0qsWYCivxnI4u29ec7YkoYqCTcnez9p9-4l0ZvduaE4xX3zz8c_DS3PPgwGV0aPd81fydhpkHp-EBOg_F90HdZr0x3SqeRy2NJjUxr5UiaWwRWfuQWFyp4kHtC-1YYEvXV6NLzFsq6l_qDTXYZjm8wh3Z-Qy10wclar1aWEOVE4VeWOCGyNzUVIcSIYvZ0YLfqo6nWQ1pXrdeK4U-zzII3dHGC0cB9gGOh4H5EqxQvGweNoKf9XKUX3atyJRgK1-Jnl1l0kVktCZWlqbibwMRL6VcHAwPDX7PDHj6eEC13rSTnVj8KVTY_PR2ugs8ZZSLug0SwbzrvwWeoQH3EghX2Fz9gsxN2pQt1CiF-BVnNeoccF7JzllSvKTmjScvGamKBo0VjmcyUva=w1216-h684-no?authuser=1";
+        private static string link_PrePurchase = @"https://lh3.googleusercontent.com/rnLSJxUUrWbTUkHaW3Zlg4Yazh7p4-inHOgL2RFItItwcBozEU11Fj7Dlmp5kgExuByvhfRPTZU1w8jxvKfhZTfSzE-kHOGNy2tN-BPRug1H2hVWgy8IgpDTdT7TKmd5zqRxGFTjP1ZoqCHXd2qGLbbdFznmMAtZEihMiyHEd-xC9sGeMNQl6w8EeXOjCO546ArAWUT1sjNlmJvw2b6uV9y6U486iHVuyalQ6GtuM6smGbUHJYu6JCIReV_aQEImH4ABurjv04t76KDvP1eHn7ZmIDfEr7yYlZHDRI4UACcsVCufyR2ayeYTbxnLdyzKGWUUI7UYs_We7HlhiT7Fy-m11ST-YnN0xN14_jkWRSSc-4-xTweOXOzp7DNROodAFR6_TSu-L_Wndck_eCdgc-rIwaT1hsGLdNoTfJmgA916pACVKIt27q4jcQ_Uz4Y7Zj_CgA299yFVWQVyNByLFwBGpxsoV3JxtrX4qFWr8VsOMinByIYUPyOuQGYjwpmgQUlKWwyanRCZ-K1fZNd-ZdbJlfg1xYbIW1NM8L3pLKqaWdzpnDJ0LhSFg1vGGh5zL0FWGGTTpFQ146VssDSvSdHRT-UfFMQVOd6fIYNF85J51jCMsybo6-SuI7LHTyZK7nwBrTTziStdekvsszQZaw0MnV8GBbEs2l7gY2RtTHIRfFc-Ik3Za-xtv8D2=w1216-h684-no?authuser=1";
+        private static string link_Complete = @"https://lh3.googleusercontent.com/2xfGr3maTPFmzopTtBiJrw0DqU8enDPtHSCIO3vqW3Rq-qg29f2yV--aVSN3X4Tr2yfdzeVnr4BKrb-sIcs9cWSuL7i0jsO9Wu4AKqUuUV3jfNBz6omgXCn3sxeLyegncwqPcweRJCei-7EUeOTTphQm6E_lexnXA5f2TtAnvNHcTJ_PBe38AWvrw4aFpyvv1xAZZVRvZ5EduBFzLIuLBkX1NY8fN1yluhbwdnxJJan8vWKpPKiujpy5TGDfPJV16waejZiH9NqkzqASFOK6fnxhCBu43JjRb-lemtPKo6FirYXnr8rKlhBjY5WeALPVdskwgLOUWJwq2nqe0CDFHTtmWw9ofZTcHpF6tRLuB3vPKow2q12wg_s5qlffiFvKQ4QEcJwrm-RQkLg-0qvtZzIIN0-ydpPaU4iKqL0pT8aPago5nlDNGz-tHJVpJg3z6V48WaOC8toAoNTmpS-xsxqCl4l2vQ9Zgckt-4o-wD7YzFDGqTxYG7krov1n-jX8NVOf4z6R3sUWQ2c0487Zt-lY6fdPjk8OWi4SAEEXPG216Dquipjb6rNVL5niaSIBHhI176tE3IlrwEajkF80scIhGpHu6GB2rLMyx8HIK8NrR3MBZDh6fek8CUq3GjHCkcrAVqCc6XVM08PSxcoy0CNvS_aG2Xnt2uZo_on3dPpvR7KiczHfH90ne3ZZ=w1216-h684-no?authuser=1";
+
+        public string Photo { get => link_photo; set => link_photo = value; }
         public Vx680() { }
         public InlineKeyboardMarkup inlineKeybord = new InlineKeyboardMarkup(new[]
         {
-            new[]{InlineKeyboardButton.WithUrl("վաճառք-Purchase","https://www.youtube.com/watch?v=mDm7U16cxNA&t=291s") },
-            new[]{InlineKeyboardButton.WithUrl("անվավեր-Void","https://www.youtube.com/watch?v=mDm7U16cxNA&t=291s") },
-            new[]{InlineKeyboardButton.WithUrl("հետվճար-Refund","https://www.youtube.com/watch?v=mDm7U16cxNA&t=291s")},
-            new[]{InlineKeyboardButton.WithUrl("հավաստագրում-PrePurchase","https://www.youtube.com/watch?v=mDm7U16cxNA&t=291s") },
-            new[]{InlineKeyboardButton.WithUrl("հաստատում-Complete(PrePurchase)","https://www.youtube.com/watch?v=mDm7U16cxNA&t=291s")}
+            new[]{InlineKeyboardButton.WithUrl("վաճառք-Purchase", link_Purchase) },
+            new[]{InlineKeyboardButton.WithUrl("անվավեր-Void",link_Void) },
+            new[]{InlineKeyboardButton.WithUrl("հետվճար-Refund", link_Refund) },
+            new[]{InlineKeyboardButton.WithUrl("հավաստագրում-PrePurchase", link_PrePurchase) },
+            new[]{InlineKeyboardButton.WithUrl("հաստատում-Complete(PrePurchase)", link_Complete) },
         });
     }
 }
