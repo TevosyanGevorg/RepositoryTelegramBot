@@ -6,7 +6,7 @@ namespace TelegramBot
 {
     class Program
     {
-        private static readonly TelegramBotClient posBot = new TelegramBotClient("1125804301:AAGqeQcWqxtkrcXona1UgnH3ulXuBpoujXQ");
+        private static readonly TelegramBotClient posBot = new TelegramBotClient("1125804301:AAE4mSNdRsl6-A_6gq5En4J_xv1R-wockT4");
         static void Main(string[] args)
         {
             // HOW CAN I CHANGE THIS CODE FOR SERVER/ OR SERVICE

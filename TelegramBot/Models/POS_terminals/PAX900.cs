@@ -4,7 +4,7 @@ namespace TelegramBot
 {
     public class PAX900
     {
-        private string photo = @"https://photos.app.goo.gl/Dd4ZpjjAhRUuT3Hr6";
+        private string photo = @"https://lh3.googleusercontent.com/pw/ACtC-3cpMTzu9bF0afjPiuRWk53cnF5L4AlAfJP55gLJhbORNnOKdPKc-wcoJqO2YaL_Rjupncr27nQdki5Ib2PqTq9TCIMdy_RTPNtSAcIXmuPDYVjtWzxcpHFXXr7JBKp4Fm89RYD7QMT5LGmYOgfp10nV=s225-no?authuser=0";
         public string Photo { get => photo; set => photo = value; }
         public PAX900(){ }
         public InlineKeyboardMarkup inlineKeybord = new InlineKeyboardMarkup(new[]

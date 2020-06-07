@@ -1,16 +1,24 @@
 ﻿<Properties StartupConfiguration="{717392CA-9BDF-495A-BB8E-6F2812F4B5DA}|Default">
   <MonoDevelop.Ide.ItemProperties.TelegramBot PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TelegramBot/DataForBot.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TelegramBot/Models/POS_terminals/Vx680.cs">
     <Files>
-      <File FileName="TelegramBot/Program.cs" Line="1" Column="1" />
+      <File FileName="TelegramBot/Program.cs" Line="41" Column="1" />
       <File FileName="TelegramBot/DataForBot.cs" Line="1" Column="1" />
+      <File FileName="TelegramBot/Models/POS_terminals/PAX900.cs" Line="20" Column="1" />
+      <File FileName="TelegramBot/Models/POS_terminals/PartnerTech.cs" Line="7" Column="246" />
+      <File FileName="TelegramBot/Models/POS_terminals/Vx520.cs" Line="7" Column="246" />
+      <File FileName="TelegramBot/Models/POS_terminals/Vx680.cs" Line="7" Column="77" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TelegramBot" expanded="True">
             <Node name="TelegramBot" expanded="True">
-              <Node name="DataForBot.cs" selected="True" />
+              <Node name="Models" expanded="True">
+                <Node name="POS_terminals" expanded="True">
+                  <Node name="Vx680.cs" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>

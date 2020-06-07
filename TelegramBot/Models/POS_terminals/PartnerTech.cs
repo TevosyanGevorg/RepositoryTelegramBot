@@ -4,7 +4,7 @@ namespace TelegramBot
 {
     public class PartnerTech
     {
-        private string photo = @"https://photos.app.goo.gl/ptd6JjGbCGx9scQS7";
+        private string photo = @"https://lh3.googleusercontent.com/pw/ACtC-3dKFQuhAq_c9pGtHmwVVUY4Hz4nnJkcADzelNa0HsGDasQVFRW8B883iTO0jnZc5mxCOXUJGdf98SeFHJGb24NptFcYhqqs8DWztdf6J01GTD9NRm-956YxizjxZwFr0RQ-Nou4dMXhFLoNQE4x8mOQ=s225-no?authuser=0";
         public string Photo { get => photo; set => photo = value; }
         public PartnerTech(){ }
         public InlineKeyboardMarkup inlineKeybord = new InlineKeyboardMarkup(new[]
