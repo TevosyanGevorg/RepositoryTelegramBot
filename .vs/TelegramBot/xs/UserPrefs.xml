@@ -2,8 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.TelegramBot PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="TelegramBot/Program.cs">
     <Files>
-      <File FileName="TelegramBot/DataForBot.cs" Line="46" Column="28" />
-      <File FileName="TelegramBot/Program.cs" Line="14" Column="16" />
+      <File FileName="TelegramBot/Program.cs" Line="72" Column="1" />
       <File FileName="TelegramBot/Models/POS_terminals/PAX900.cs" />
       <File FileName="TelegramBot/Models/POS_terminals/Vx520.cs" />
       <File FileName="TelegramBot/Models/POS_terminals/Vx680.cs" />
@@ -26,7 +25,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

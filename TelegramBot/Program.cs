@@ -73,9 +73,10 @@ namespace TelegramBot
                         string text_choose5 = "succesfull";
                         await posBot.SendTextMessageAsync(message.From.Id, text_choose5);
                         break;
- //-----------------------------------------------------------------------------------------------------------------------------------
+                    //-----------------------------------------------------------------------------------------------------------------------------------
 
                     default:
+
                         break;
                 }
                 if (message.Text.Length >= 2 && message.Text.Length <= 3)
