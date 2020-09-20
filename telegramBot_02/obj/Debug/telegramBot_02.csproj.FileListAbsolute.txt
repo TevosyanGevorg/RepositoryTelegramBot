@@ -1,0 +1,13 @@
+/Users/stalker/Desktop/telegramBot_02/telegramBot_02/bin/Debug/telegramBot_02.exe
+/Users/stalker/Desktop/telegramBot_02/telegramBot_02/bin/Debug/telegramBot_02.pdb
+/Users/stalker/Desktop/telegramBot_02/telegramBot_02/obj/Debug/telegramBot_02.csprojAssemblyReference.cache
+/Users/stalker/Desktop/telegramBot_02/telegramBot_02/obj/Debug/telegramBot_02.csproj.CoreCompileInputs.cache
+/Users/stalker/Desktop/telegramBot_02/telegramBot_02/obj/Debug/telegramBot_02.exe
+/Users/stalker/Desktop/telegramBot_02/telegramBot_02/obj/Debug/telegramBot_02.pdb
+/Users/stalker/Desktop/telegramBot_02/telegramBot_02/bin/Debug/telegramBot_02.exe.config
+/Users/stalker/Desktop/telegramBot_02/telegramBot_02/bin/Debug/Newtonsoft.Json.dll
+/Users/stalker/Desktop/telegramBot_02/telegramBot_02/bin/Debug/Telegram.Bot.dll
+/Users/stalker/Desktop/telegramBot_02/telegramBot_02/bin/Debug/Newtonsoft.Json.xml
+/Users/stalker/Desktop/telegramBot_02/telegramBot_02/bin/Debug/Telegram.Bot.xml
+/Users/stalker/Desktop/telegramBot_02/telegramBot_02/obj/Debug/telegramBot_02.exe.config
+/Users/stalker/Desktop/telegramBot_02/telegramBot_02/obj/Debug/telegramBot_02.csproj.CopyComplete

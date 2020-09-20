@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.TelegramBot PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="TelegramBot/Program.cs">
     <Files>
-      <File FileName="TelegramBot/Program.cs" Line="72" Column="1" />
+      <File FileName="TelegramBot/Program.cs" Line="82" Column="2" />
       <File FileName="TelegramBot/Models/POS_terminals/PAX900.cs" />
       <File FileName="TelegramBot/Models/POS_terminals/Vx520.cs" />
       <File FileName="TelegramBot/Models/POS_terminals/Vx680.cs" />
@@ -14,10 +14,7 @@
         <State name="__root__">
           <Node name="TelegramBot" expanded="True">
             <Node name="TelegramBot" expanded="True">
-              <Node name="Models" expanded="True">
-                <Node name="POS_terminals" expanded="True" />
-              </Node>
-              <Node name="Program.cs" selected="True" />
+              <Node name="Models" expanded="True" selected="True" />
             </Node>
           </Node>
         </State>
